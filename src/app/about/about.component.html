@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col-sm-7" *ngIf="deviceData">
+    <div class="table-responsive">
+      <table class="table">
+        <thead class="thead-light">
+          <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>data</th>
+            <th>networkId</th>
+            <th>deviceTypeId</th>
+            <th>isBlocked</th> 
+          </tr>
+        </thead>
+        <tbody>
+          <td>{{deviceData.id}}</td>
+          <td>{{deviceData.name}}</td>
+          <td>{{deviceData.data.test}}</td>
+          <td>{{deviceData.networkId}}</td>
+          <td>{{deviceData.deviceTypeId}}</td>
+          <td>{{deviceData.isBlocked}}</td>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="col-sm-5">
+      <app-chart></app-chart>
+  </div>
+</div>
